@@ -8,7 +8,6 @@ public class LoginPage extends Utility {
     By passwordField = By.xpath("//input[@placeholder='Password']");
     By loginButton = By.xpath("//button[normalize-space()='Login']");
     By logoHRForALL = By.xpath("//div[@class='orangehrm-login-logo']//img[@alt='orangehrm-logo']");
-
     By loginPanelDisplayed = By.xpath("//h5[normalize-space()='Login']");
 
     public void enterUserName(String username) {

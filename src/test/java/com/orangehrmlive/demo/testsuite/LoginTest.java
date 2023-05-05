@@ -33,9 +33,6 @@ public class LoginTest extends BaseTest {
             loginPage.clickLoginButton();
             dashBoardPage.clickOnUserProfileLogo();
             dashBoardPage.mouseHooverOnLogoutAndClick();
-            String expectedMessage = "Login";
-            String actualMessage = loginPage.loginPanelDisplayed();
-            assertEquals(actualMessage, expectedMessage);
-         verifyText(driver,By.xpath("//h5[normalize-space()='Login']"),"Login Panel");
+            verifyText(driver,By.xpath("//h5[normalize-space()='Login']"),"Login Panel");
         }
     }
